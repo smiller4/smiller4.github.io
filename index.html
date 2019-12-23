@@ -38,7 +38,7 @@ function musicPlay() {
 </script>
 
 </head>
-<body>
+<body>  
     
 <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
 <div class="container py-2 py-md-5">
@@ -58,22 +58,27 @@ function musicPlay() {
 </div>
 
 <nav class="navbar navbar-light custom-navbar">
-<div class="container">
-    <div class="burger col-md-12 animated heartBeat text-right">
+
+<div class="container" data-aos="fade-down" data-aos-delay="300">
+    <div class="burger col-12 text-right">
     <a href="Samuel-Miller-Resume.pdf" target="_blank" style="cursor:crosshair;">
-        + resumé.pdf
+        resumé.pdf
       </a>
     </div>
-    <div class="burger col-md-12 animated heartBeat text-right">
+    <div class="burger col-12 text-right">
       <a href="" data-toggle="collapse" data-target="#main-navbar" style="cursor:crosshair;">
-        ^ introduction.html
+        introduction.html
       </a>
-    </div>
+    </div>     
+  <div id="custom-header-img">
+        <img src="img/favicon-dropdown.png"  data-aos="fade-down" data-aos-delay="3000"> 
+  </div> 
 </div>
 </nav> 
 
 <main id="main">
 
+    
 <div class="site-section site-portfolio">
   <div class="container">
     <div class="row mb-5 align-items-center">
@@ -202,18 +207,26 @@ function musicPlay() {
 <footer class="footer" role="contentinfo">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-sm-12 text-center" data-aos="fade-up" data-aos-delay="500000"> 
-            <a href="https://open.spotify.com/artist/5p0UDxKNoQli0B8MOYwT4U">
-            song by k1do
-            </a>
+            <div class="col-sm-12 text-center" data-aos="fade-up" data-aos-delay="300"> 
+                <div class="credits">
+                    <small>Big thanks to: 
+                        <a href="https://wesbos.com/" target="_blank">Wes Bos</a>,
+                        <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a><br> 
+                        and everyone else who has ever helped or inspired me &lt;3
+                    </small>
+                </div>
+                <small>song by <a href="https://open.spotify.com/artist/5p0UDxKNoQli0B8MOYwT4U">k1do</a></small>
                 <div class="col-sm-12">
                     <audio id="myAudio" controls autoplay>
                         <source src="NotusHeavy.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
+                    <img src="img/footer-divi.png" class="img-fluid">
+
             </div>
         </div>
+
     </div>
   </footer>
 
