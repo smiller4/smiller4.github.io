@@ -5,9 +5,10 @@
   Author URL: https://bootstrapmade.com/
 */
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+#custom-header-img {
+    position: absolute;
+    left:0;
+}
 
 body {
   font-family: "Inconsolata", monosapce;
@@ -540,7 +541,7 @@ h6,
   }
 }
 
-        @-webkit-keyframes heartBeat {
+@-webkit-keyframes heartBeat {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -601,4 +602,18 @@ h6,
     animation-duration: 1.3s;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out
+}
+
+/***** Pulse *****/
+
+.pulse a:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);
+  100% { transform: scale(1); }
+  }
 }
